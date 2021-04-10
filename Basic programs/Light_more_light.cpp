@@ -1,23 +1,20 @@
 #include<iostream>
 #include<stdio.h>
+#include<math.h>
 using namespace std;
 
 int main(){
     while(1)
     {
-        int n,c=0;
+        long long int n;
         cin>>n;
         if (n == 0)
             break;
-        for(int i=1;i<=n;i++)
-        {
-            if(n%i==0)
-                c++;
-        }
-        if(c%2==0)
-            cout<<"no"<<endl;
-        else
+        double p=sqrt(n);
+        if(p==(int)p)
             cout<<"yes"<<endl;
+        else
+            cout<<"no"<<endl;
     }
     return 0;
 }
