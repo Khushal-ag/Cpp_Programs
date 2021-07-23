@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main() {
 	int t;
 	cin>>t;
@@ -10,7 +9,6 @@ int main() {
        cin>>d>>x>>y>>z;
        int m = max(7*x, y*d + z*(7-d));
        cout<<m<<endl; 
-	    
 	}
 	return 0;
 }
