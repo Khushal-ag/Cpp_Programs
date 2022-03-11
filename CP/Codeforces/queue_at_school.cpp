@@ -12,13 +12,14 @@ int main()
 	cin >> n, t;
 	string s;
 	cin >> s;
-	string res = "0";
+	string res = "";
 	while (t--)
 	{
 		for (int i = 0; i < s.size() - 1; ++i)
 		{
 			if (s[i] == 'B' && s[i + 1] == 'G') {
-				res += "GB";
+				res.push_back('G');
+				res.push_back('B');
 				i++;
 			}
 			else res += (s[i]);
