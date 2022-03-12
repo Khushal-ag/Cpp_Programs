@@ -11,7 +11,7 @@ int main()
 	int n, t;
 	cin >> n, t;
 	string s;
-	cin >> s;
+	getline(cin, s);
 	string res = "";
 	while (t--)
 	{
@@ -22,7 +22,7 @@ int main()
 				res.push_back('B');
 				i++;
 			}
-			else res += (s[i]);
+			else res.push_back(s[i]);
 		}
 		if (res == s) break;
 	}
