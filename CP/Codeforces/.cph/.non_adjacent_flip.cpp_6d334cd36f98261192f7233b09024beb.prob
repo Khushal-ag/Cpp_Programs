@@ -1,0 +1,1 @@
+{"name":"Local: non_adjacent_flip","url":"f:\\CODES\\C++ Programs\\CP\\Codeforces\\non_adjacent_flip.cpp","tests":[{"id":1649259015930,"input":"3\n6\n101001\n5\n00000\n3\n111\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CODES\\C++ Programs\\CP\\Codeforces\\non_adjacent_flip.cpp","group":"local","local":true}

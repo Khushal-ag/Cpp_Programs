@@ -1,0 +1,1 @@
+{"name":"Local: make_them_equal","url":"f:\\CODES\\C++ Programs\\CP\\Codechef\\make_them_equal.cpp","tests":[{"id":1649259841653,"input":"2\n4\n1 2 3 4\n5\n1 1 1 1 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CODES\\C++ Programs\\CP\\Codechef\\make_them_equal.cpp","group":"local","local":true}
