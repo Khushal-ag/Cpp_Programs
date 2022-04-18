@@ -1,21 +1,13 @@
-#include<bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
-
-int main(){
-    int n;
-    cin>>n;
-    string s;
-    cin>>s;
-    int r = 0,g = 0,b = 0;
-    for(auto i:s)
-    {
-        if(i == 'R') r++;
-        else if(i == 'G') g++;
-        else b++;
+string b;
+int a, c;
+int main() {
+    cin >> a >> b;
+    for (int i = 0; i < a; i++) {
+        if (b[i] == b[i + 1]) {
+            c++;
+        }
     }
-    int a[] = {r,g,b};
-    sort(a,a+3);
-    cout <<a[2]-(a[0]+a[1]);
-    return 0;
+    cout << c;
 }
