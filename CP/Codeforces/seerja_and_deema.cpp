@@ -20,6 +20,5 @@ int main()
 		else min += v[i];
 	cout << max << " " << min;
 
-
 	return 0;
 }
