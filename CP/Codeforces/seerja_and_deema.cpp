@@ -19,6 +19,8 @@ int main()
 		if (i % 2 == 0) max += v[i];
 		else min += v[i];
 	cout << max << " " << min;
-
+	cout<<" ";
+	for (int i = 0; i < 5; i++)
+		cout << i;
 	return 0;
 }
