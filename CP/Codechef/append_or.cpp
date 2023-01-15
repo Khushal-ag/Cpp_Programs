@@ -45,8 +45,6 @@ int main(){
     	int ans = y-o;
     	if((ans & y) == ans) cout<<ans<<endl;
     	else cout<<-1<<endl;
-
-
     }
     return 0;					
 }
