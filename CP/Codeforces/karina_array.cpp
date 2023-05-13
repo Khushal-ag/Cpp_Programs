@@ -32,14 +32,11 @@ int main(){
     while(t--){
     	int n;
     	cin>>n;
-    	n--;
-    	int ans = 0;
-    	if(n>=2){
-    		ans += 2;
-    		n -= 2;
-    		if(n!=0) ans += (n/2)*3 + n%2;
-    	}
-    	cout<<ans<<endl;
+    	vector<long long> v(n);
+    	for(int i=0;i<n;i++)
+    		cin>>v[i];
+    	sort(v.begin(),v.end());
+    	cout<<max(v[0] * v[1],v[n-1] * v[n-2])<<endl;
 
     }
     return 0;					

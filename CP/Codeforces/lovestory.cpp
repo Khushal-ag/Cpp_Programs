@@ -30,17 +30,15 @@ int main(){
 	int t;
     cin>>t;
     while(t--){
-    	int n;
-    	cin>>n;
-    	n--;
-    	int ans = 0;
-    	if(n>=2){
-    		ans += 2;
-    		n -= 2;
-    		if(n!=0) ans += (n/2)*3 + n%2;
+    	string s;
+    	cin>>s;
+    	int c= 0;
+    	string temp = "codeforces";
+    	for(int i=0;i<10;i++)
+    	{
+    		if(s[i]!=temp[i])c++;
     	}
-    	cout<<ans<<endl;
-
+    	cout<<c<<endl;
     }
     return 0;					
 }

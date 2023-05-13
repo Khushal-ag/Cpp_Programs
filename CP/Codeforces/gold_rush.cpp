@@ -23,6 +23,13 @@
 
 using namespace std;
 
+
+bool help(ll n,ll m)
+{
+	if(n-m == 0 ) return true;
+	else if(n%3 || m>n) return false;
+	return help(n-n/3,m) || help(n/3,m);
+}
 int main(){
 	ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
@@ -30,16 +37,9 @@ int main(){
 	int t;
     cin>>t;
     while(t--){
-    	int n;
-    	cin>>n;
-    	n--;
-    	int ans = 0;
-    	if(n>=2){
-    		ans += 2;
-    		n -= 2;
-    		if(n!=0) ans += (n/2)*3 + n%2;
-    	}
-    	cout<<ans<<endl;
+    	int n,m;
+    	cin>>n>>m;
+    	help(n,m)==true?yes:no;
 
     }
     return 0;					

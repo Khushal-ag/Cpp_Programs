@@ -32,13 +32,21 @@ int main(){
     while(t--){
     	int n;
     	cin>>n;
-    	n--;
     	int ans = 0;
-    	if(n>=2){
-    		ans += 2;
-    		n -= 2;
-    		if(n!=0) ans += (n/2)*3 + n%2;
+    	int c = 0;
+    	while(n--)
+    	{
+    		int x;
+    		cin>>x;
+    		if(x==1)
+    		{
+    			ans = max(ans,c);
+    			c=0;
+    		}
+    		else c++;
+
     	}
+    	ans = max(ans,c);
     	cout<<ans<<endl;
 
     }

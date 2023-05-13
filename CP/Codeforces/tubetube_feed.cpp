@@ -30,16 +30,32 @@ int main(){
 	int t;
     cin>>t;
     while(t--){
-    	int n;
-    	cin>>n;
-    	n--;
-    	int ans = 0;
-    	if(n>=2){
-    		ans += 2;
-    		n -= 2;
-    		if(n!=0) ans += (n/2)*3 + n%2;
+    	int n,t;
+    	cin>>n>>t;
+    	vector<int> a;
+    	vector<int> b;
+    	for(int i=0;i<n;i++)
+    	{
+    		int x;
+    		cin>>x;
+    		a.pb(x);
     	}
-    	cout<<ans<<endl;
+    	for(int i=0;i<n;i++)
+    	{
+    		int x;
+    		cin>>x;
+    		b.pb(x);
+    	}
+    	int index = -1,maxn=INT_MIN;
+    	for(int i=0;i<n;i++,t--){
+    		if(a[i]<=t){
+    			if(b[i]>maxn){
+    				maxn = b[i];
+    				index = i+1;
+    			}
+    		}
+    	}
+    	cout<<index<<endl;
 
     }
     return 0;					

@@ -32,13 +32,11 @@ int main(){
     while(t--){
     	int n;
     	cin>>n;
-    	n--;
-    	int ans = 0;
-    	if(n>=2){
-    		ans += 2;
-    		n -= 2;
-    		if(n!=0) ans += (n/2)*3 + n%2;
-    	}
+    	long long a,b,c;
+    	a = 4*n;
+    	b = (n-1)*n/2;
+    	c = (n-2)*(n-1)/2;
+    	long long int ans = a+b+c+1;
     	cout<<ans<<endl;
 
     }
